@@ -1,10 +1,63 @@
-table, td, tr{
-    border: 2px dotted;
+tr:nth-child(even){
+    border: 2px solid;
     border-width: 1px;
+   background-color: grey;
+
+
 }
-th {
+table{
+    width: 80%;
+    margin: 0px auto;
+}
+/*th {
     
     border-spacing: 10px;
     border: 2px solid;
     border-width: 3px;
+    background-color: aliceblue;
+    
+}*/
+body {
+     background-color: rgba(233, 220, 220, 0.69);
 }
+
+.grey{
+background-color: grey;
+ border-spacing: 10px;
+    border: 2px solid;
+    border-width: 3px;
+}
+
+.white{
+background-color: aliceblue; border-spacing: 10px;
+    border: 2px solid;
+    border-width: 3px;
+}
+.td-button-fällig{
+    background-color: lightcoral;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+    width: auto;
+
+}
+.td-button-bald{
+    background-color: lightyellow;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+    width: auto;
+
+}
+.td-button-lang{
+    background-color:lightgreen;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+    width: auto;
+
+}
+ 
