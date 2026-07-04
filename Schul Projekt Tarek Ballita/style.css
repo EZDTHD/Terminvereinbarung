@@ -1,63 +1,231 @@
-tr:nth-child(even){
-    border: 2px solid;
-    border-width: 1px;
-   background-color: grey;
+ :root {
+    --color-bg: #f1f2f4;
+    --color-surface: #ffffff;
+    --color-stripe: #f8f9fb;
+    --color-border: #e6e8ec;
+    --color-header-bg: #1d2333;
+    --color-header-text: #f5f6f8;
+    --color-time-text: #5b6472;
+    --color-ink: #1d2333;
 
+    --color-fällig: #dc2626;
+    --color-fällig-text: #b91c1c;
+    --color-fällig-bg: rgba(220, 38, 38, 0.07);
 
-}
-table{
-    width: 80%;
-    margin: 0px auto;
-}
-/*th {
-    
-    border-spacing: 10px;
-    border: 2px solid;
-    border-width: 3px;
-    background-color: aliceblue;
-    
-}*/
-body {
-     background-color: rgba(233, 220, 220, 0.69);
-}
+    --color-bald: #d97706;
+    --color-bald-text: #b45309;
+    --color-bald-bg: rgba(217, 119, 6, 0.08);
 
-.grey{
-background-color: grey;
- border-spacing: 10px;
-    border: 2px solid;
-    border-width: 3px;
-}
+    --color-lang: #059669;
+    --color-lang-text: #047857;
+    --color-lang-bg: rgba(5, 150, 105, 0.07);
 
-.white{
-background-color: aliceblue; border-spacing: 10px;
-    border: 2px solid;
-    border-width: 3px;
-}
-.td-button-fällig{
-    background-color: lightcoral;
-    color: black;
+    --radius-lg: 18px;
+    --radius-sm: 6px;
+    --shadow: 0 12px 32px rgba(29, 35, 51, 0.1);
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 48px 20px;
+    background-color: var(--color-bg);
+    font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: var(--color-ink);
+    display: flex;
+    justify-content: center;
+  }
+
+  .planner {
+    width: 100%;
+    max-width: 1120px;
+  }
+
+  .planner h1 {
+    margin: 0 0 22px;
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
     text-align: center;
-    cursor: pointer;
-    padding: 10px;
-    width: auto;
+  }
 
-}
-.td-button-bald{
-    background-color: lightyellow;
-    color: black;
+  .table-wrapper {
+    background: var(--color-surface);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow);
+    overflow: auto;
+    max-height: 78vh;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    min-width: 760px;
+  }
+
+  thead th {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: var(--color-header-bg);
+    color: var(--color-header-text);
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 0.88rem;
+    padding: 14px 8px;
+    white-space: nowrap;
+  }
+
+  thead th:first-child,
+  tbody td:first-child {
+    width: 84px;
+  }
+
+  tbody td {
+    border-bottom: 1px solid var(--color-border);
+    border-right: 1px solid var(--color-border);
+    padding: 5px;
     text-align: center;
-    cursor: pointer;
-    padding: 10px;
-    width: auto;
+    vertical-align: middle;
+  }
 
-}
-.td-button-lang{
-    background-color:lightgreen;
-    color: black;
+  tbody td:first-child {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 500;
+    font-size: 0.78rem;
+    color: var(--color-time-text);
+    white-space: nowrap;
+  }
+
+  tbody tr:last-child td {
+    border-bottom: none;
+  }
+
+  tbody td:last-child {
+    border-right: none;
+  }
+
+  tbody tr:nth-child(odd) td {
+    background-color: var(--color-surface);
+  }
+
+  tbody tr:nth-child(even) td {
+    background-color: var(--color-stripe);
+  }
+
+  /* Grundstil: jeder Button ist erstmal unsichtbar (nur die Zelle zählt) */
+  .td-button {
+    width: 100%;
+    min-height: 36px;
+    border: none;
+    border-radius: var(--radius-sm);
+    background-color: transparent;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.76rem;
+    font-weight: 600;
     text-align: center;
+    padding: 6px 8px;
     cursor: pointer;
-    padding: 10px;
-    width: auto;
+    transition: transform 0.15s ease, background-color 0.15s ease;
+  }
 
-}
- 
+  .td-button[value=""] {
+    background-color: transparent;
+  }
+
+  .td-button[value=""]:hover {
+    background-color: rgba(29, 35, 51, 0.05);
+  }
+
+  /* Nur belegte Termine bekommen Farbe je nach Dringlichkeit */
+  .td-button-fällig:not([value=""]) {
+    background-color: var(--color-fällig-bg);
+    color: var(--color-fällig-text);
+    border-left: 3px solid var(--color-fällig);
+    border-radius: 4px 6px 6px 4px;
+  }
+
+  .td-button-bald:not([value=""]) {
+    background-color: var(--color-bald-bg);
+    color: var(--color-bald-text);
+    border-left: 3px solid var(--color-bald);
+    border-radius: 4px 6px 6px 4px;
+  }
+
+  .td-button-lang:not([value=""]) {
+    background-color: var(--color-lang-bg);
+    color: var(--color-lang-text);
+    border-left: 3px solid var(--color-lang);
+    border-radius: 4px 6px 6px 4px;
+  }
+
+  .td-button:not([value=""]):hover {
+    transform: translateY(-1px);
+  }
+
+  .td-button:focus-visible {
+    outline: 2px solid var(--color-ink);
+    outline-offset: 2px;
+  }
+
+  .legend {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  .legend span {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.76rem;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 4px 6px 6px 4px;
+  }
+
+  .legend .fällig {
+    background-color: var(--color-fällig-bg);
+    color: var(--color-fällig-text);
+    border-left: 3px solid var(--color-fällig);
+  }
+
+  .legend .bald {
+    background-color: var(--color-bald-bg);
+    color: var(--color-bald-text);
+    border-left: 3px solid var(--color-bald);
+  }
+
+  .legend .lang {
+    background-color: var(--color-lang-bg);
+    color: var(--color-lang-text);
+    border-left: 3px solid var(--color-lang);
+  }
+
+  @media (max-width: 640px) {
+    body {
+      padding: 24px 12px;
+    }
+    .planner h1 {
+      font-size: 1.4rem;
+    }
+    thead th,
+    tbody td {
+      padding: 8px 4px;
+      font-size: 0.72rem;
+    }
+    .td-button {
+      font-size: 0.68rem;
+      min-height: 32px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .td-button {
+      transition: none;
+    }
+  }

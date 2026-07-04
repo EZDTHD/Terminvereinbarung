@@ -1,217 +1,252 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Termin.de</title>
-    <link rel="Stylesheet" href  ="style.css">
-    <link rel="JavaScript" href = "main.js">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Termin.de</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<script src="main.js" defer></script>
 </head>
 <body>
-<section>
-    <table>
-        <tr>
-            <th>-----</th>
-            <th class="white">Montag</th>
-            <th class="grey">Dienstag</th>
-            <th class="white">Mittwoch</th>
-            <th class="grey">Donnerstag</th>
-            <th class="white">Freitag</th>
-            <th class="grey">Samstag</th>
-            <th class="white">Sonntag</th>
-        </tr>
+  <main class="planner">
+    <h1>Wochenplaner</h1>
 
-<tr><td class="white">6:00</td>
-<td><input type="button" class="td-button td-button-fällig" value="Joggen"></td>
-<td><input type="button" class="td-button td-button-fällig" value=""></td>
-<td><input type="button" class="td-button td-button-bald" value=""></td>
-<td><input type="button" class="td-button td-button-bald" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-</tr>
-<tr><td class="grey">6:30</td>
-<td><input type="button" class="td-button td-button-fällig" value=""></td>
-<td><input type="button" class="td-button td-button-fällig" value="Yoga"></td>
-<td><input type="button" class="td-button td-button-bald" value=""></td>
-<td><input type="button" class="td-button td-button-bald" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-</tr>
-<tr><td class="white">7:00</td>
-<td><input type="button" class="td-button td-button-fällig" value=""></td>
-<td><input type="button" class="td-button td-button-fällig" value=""></td>
-<td><input type="button" class="td-button td-button-bald" value="Frühstück"></td>
-<td><input type="button" class="td-button td-button-bald" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-</tr>
-<tr><td class="grey">7:30</td>
-<td><input type="button" class="td-button td-button-fällig" value=""></td>
-<td><input type="button" class="td-button td-button-fällig" value=""></td>
-<td><input type="button" class="td-button td-button-bald" value=""></td>
-<td><input type="button" class="td-button td-button-bald" value="Radfahren"></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-</tr>
-<tr><td class="white">8:00</td>
-<td><input type="button" class="td-button td-button-fällig" value=""></td>
-<td><input type="button" class="td-button td-button-fällig" value=""></td>
-<td><input type="button" class="td-button td-button-bald" value=""></td>
-<td><input type="button" class="td-button td-button-bald" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value="Meeting"></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-</tr>
-<tr><td class="grey">8:30</td>
-<td><input type="button" class="td-button td-button-fällig" value=""></td>
-<td><input type="button" class="td-button td-button-fällig" value=""></td>
-<td><input type="button" class="td-button td-button-bald" value=""></td>
-<td><input type="button" class="td-button td-button-bald" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value="Einkaufen"></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-</tr>
-<tr><td class="white">9:00</td>
-<td><input type="button" class="td-button td-button-fällig" value=""></td>
-<td><input type="button" class="td-button td-button-fällig" value=""></td>
-<td><input type="button" class="td-button td-button-bald" value=""></td>
-<td><input type="button" class="td-button td-button-bald" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value="Ausschlafen"></td>
-</tr>
-<tr><td class="grey">9:30</td>
-<td><input type="button" class="td-button td-button-fällig" value="Lernen"></td>
-<td><input type="button" class="td-button td-button-fällig" value=""></td>
-<td><input type="button" class="td-button td-button-bald" value=""></td>
-<td><input type="button" class="td-button td-button-bald" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-</tr>
-<tr><td class="white">10:00</td>
-<td><input type="button" class="td-button td-button-fällig" value=""></td>
-<td><input type="button" class="td-button td-button-fällig" value="Arzt"></td>
-<td><input type="button" class="td-button td-button-bald" value=""></td>
-<td><input type="button" class="td-button td-button-bald" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-</tr>
-<tr><td class="grey">10:30</td>
-<td><input type="button" class="td-button td-button-fällig" value=""></td>
-<td><input type="button" class="td-button td-button-fällig" value=""></td>
-<td><input type="button" class="td-button td-button-bald" value="Sport"></td>
-<td><input type="button" class="td-button td-button-bald" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-</tr>
-<tr><td class="white">11:00</td>
-<td><input type="button" class="td-button td-button-fällig" value=""></td>
-<td><input type="button" class="td-button td-button-fällig" value=""></td>
-<td><input type="button" class="td-button td-button-bald" value=""></td>
-<td><input type="button" class="td-button td-button-bald" value="Kochen"></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-</tr>
-<tr><td class="grey">11:30</td>
-<td><input type="button" class="td-button td-button-fällig" value=""></td>
-<td><input type="button" class="td-button td-button-fällig" value=""></td>
-<td><input type="button" class="td-button td-button-bald" value=""></td>
-<td><input type="button" class="td-button td-button-bald" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value="Mittagessen"></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-</tr>
-<tr><td class="white">12:00</td>
-<td><input type="button" class="td-button td-button-fällig" value=""></td>
-<td><input type="button" class="td-button td-button-fällig" value=""></td>
-<td><input type="button" class="td-button td-button-bald" value=""></td>
-<td><input type="button" class="td-button td-button-bald" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value="Freunde"></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-</tr>
-<tr><td class="grey">12:30</td>
-<td><input type="button" class="td-button td-button-fällig" value=""></td>
-<td><input type="button" class="td-button td-button-fällig" value=""></td>
-<td><input type="button" class="td-button td-button-bald" value=""></td>
-<td><input type="button" class="td-button td-button-bald" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value="Spazieren"></td>
-</tr>
-<tr><td class="white">13:00</td>
-<td><input type="button" class="td-button td-button-fällig" value="Pause"></td>
-<td><input type="button" class="td-button td-button-fällig" value=""></td>
-<td><input type="button" class="td-button td-button-bald" value=""></td>
-<td><input type="button" class="td-button td-button-bald" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-</tr>
-<tr><td class="grey">13:30</td>
-<td><input type="button" class="td-button td-button-fällig" value=""></td>
-<td><input type="button" class="td-button td-button-fällig" value="Lesen"></td>
-<td><input type="button" class="td-button td-button-bald" value=""></td>
-<td><input type="button" class="td-button td-button-bald" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-</tr>
-<tr><td class="white">14:00</td>
-<td><input type="button" class="td-button td-button-fällig" value=""></td>
-<td><input type="button" class="td-button td-button-fällig" value=""></td>
-<td><input type="button" class="td-button td-button-bald" value="Projekt"></td>
-<td><input type="button" class="td-button td-button-bald" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-</tr>
-<tr><td class="grey">14:30</td>
-<td><input type="button" class="td-button td-button-fällig" value=""></td>
-<td><input type="button" class="td-button td-button-fällig" value=""></td>
-<td><input type="button" class="td-button td-button-bald" value=""></td>
-<td><input type="button" class="td-button td-button-bald" value="Gym"></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-</tr>
-<tr><td class="white">15:00</td>
-<td><input type="button" class="td-button td-button-fällig" value=""></td>
-<td><input type="button" class="td-button td-button-fällig" value=""></td>
-<td><input type="button" class="td-button td-button-bald" value=""></td>
-<td><input type="button" class="td-button td-button-bald" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value="Kaffee"></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-</tr>
-<tr><td class="grey">15:30</td>
-<td><input type="button" class="td-button td-button-fällig" value=""></td>
-<td><input type="button" class="td-button td-button-fällig" value=""></td>
-<td><input type="button" class="td-button td-button-bald" value=""></td>
-<td><input type="button" class="td-button td-button-bald" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value="Kino"></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-</tr>
-<tr><td class="white">16:00</td>
-<td><input type="button" class="td-button td-button-fällig" value=""></td>
-<td><input type="button" class="td-button td-button-fällig" value=""></td>
-<td><input type="button" class="td-button td-button-bald" value=""></td>
-<td><input type="button" class="td-button td-button-bald" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value=""></td>
-<td><input type="button" class="td-button td-button-lang" value="Kochen"></td>
-</tr>
-    </table>
-</section>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Uhrzeit</th>
+            <th>Montag</th>
+            <th>Dienstag</th>
+            <th>Mittwoch</th>
+            <th>Donnerstag</th>
+            <th>Freitag</th>
+            <th>Samstag</th>
+            <th>Sonntag</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>6:00</td>
+            <td><input type="button" class="td-button td-button-fällig" value="Joggen"></td>
+            <td><input type="button" class="td-button td-button-fällig" value=""></td>
+            <td><input type="button" class="td-button td-button-bald" value=""></td>
+            <td><input type="button" class="td-button td-button-bald" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+          </tr>
+          <tr>
+            <td>6:30</td>
+            <td><input type="button" class="td-button td-button-fällig" value=""></td>
+            <td><input type="button" class="td-button td-button-fällig" value="Yoga"></td>
+            <td><input type="button" class="td-button td-button-bald" value=""></td>
+            <td><input type="button" class="td-button td-button-bald" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+          </tr>
+          <tr>
+            <td>7:00</td>
+            <td><input type="button" class="td-button td-button-fällig" value=""></td>
+            <td><input type="button" class="td-button td-button-fällig" value=""></td>
+            <td><input type="button" class="td-button td-button-bald" value="Frühstück"></td>
+            <td><input type="button" class="td-button td-button-bald" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+          </tr>
+          <tr>
+            <td>7:30</td>
+            <td><input type="button" class="td-button td-button-fällig" value=""></td>
+            <td><input type="button" class="td-button td-button-fällig" value=""></td>
+            <td><input type="button" class="td-button td-button-bald" value=""></td>
+            <td><input type="button" class="td-button td-button-bald" value="Radfahren"></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+          </tr>
+          <tr>
+            <td>8:00</td>
+            <td><input type="button" class="td-button td-button-fällig" value=""></td>
+            <td><input type="button" class="td-button td-button-fällig" value=""></td>
+            <td><input type="button" class="td-button td-button-bald" value=""></td>
+            <td><input type="button" class="td-button td-button-bald" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value="Meeting"></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+          </tr>
+          <tr>
+            <td>8:30</td>
+            <td><input type="button" class="td-button td-button-fällig" value=""></td>
+            <td><input type="button" class="td-button td-button-fällig" value=""></td>
+            <td><input type="button" class="td-button td-button-bald" value=""></td>
+            <td><input type="button" class="td-button td-button-bald" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value="Einkaufen"></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+          </tr>
+          <tr>
+            <td>9:00</td>
+            <td><input type="button" class="td-button td-button-fällig" value=""></td>
+            <td><input type="button" class="td-button td-button-fällig" value=""></td>
+            <td><input type="button" class="td-button td-button-bald" value=""></td>
+            <td><input type="button" class="td-button td-button-bald" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value="Ausschlafen"></td>
+          </tr>
+          <tr>
+            <td>9:30</td>
+            <td><input type="button" class="td-button td-button-fällig" value="Lernen"></td>
+            <td><input type="button" class="td-button td-button-fällig" value=""></td>
+            <td><input type="button" class="td-button td-button-bald" value=""></td>
+            <td><input type="button" class="td-button td-button-bald" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+          </tr>
+          <tr>
+            <td>10:00</td>
+            <td><input type="button" class="td-button td-button-fällig" value=""></td>
+            <td><input type="button" class="td-button td-button-fällig" value="Arzt"></td>
+            <td><input type="button" class="td-button td-button-bald" value=""></td>
+            <td><input type="button" class="td-button td-button-bald" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+          </tr>
+          <tr>
+            <td>10:30</td>
+            <td><input type="button" class="td-button td-button-fällig" value=""></td>
+            <td><input type="button" class="td-button td-button-fällig" value=""></td>
+            <td><input type="button" class="td-button td-button-bald" value="Sport"></td>
+            <td><input type="button" class="td-button td-button-bald" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+          </tr>
+          <tr>
+            <td>11:00</td>
+            <td><input type="button" class="td-button td-button-fällig" value=""></td>
+            <td><input type="button" class="td-button td-button-fällig" value=""></td>
+            <td><input type="button" class="td-button td-button-bald" value=""></td>
+            <td><input type="button" class="td-button td-button-bald" value="Kochen"></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+          </tr>
+          <tr>
+            <td>11:30</td>
+            <td><input type="button" class="td-button td-button-fällig" value=""></td>
+            <td><input type="button" class="td-button td-button-fällig" value=""></td>
+            <td><input type="button" class="td-button td-button-bald" value=""></td>
+            <td><input type="button" class="td-button td-button-bald" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value="Mittagessen"></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+          </tr>
+          <tr>
+            <td>12:00</td>
+            <td><input type="button" class="td-button td-button-fällig" value=""></td>
+            <td><input type="button" class="td-button td-button-fällig" value=""></td>
+            <td><input type="button" class="td-button td-button-bald" value=""></td>
+            <td><input type="button" class="td-button td-button-bald" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value="Freunde"></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+          </tr>
+          <tr>
+            <td>12:30</td>
+            <td><input type="button" class="td-button td-button-fällig" value=""></td>
+            <td><input type="button" class="td-button td-button-fällig" value=""></td>
+            <td><input type="button" class="td-button td-button-bald" value=""></td>
+            <td><input type="button" class="td-button td-button-bald" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value="Spazieren"></td>
+          </tr>
+          <tr>
+            <td>13:00</td>
+            <td><input type="button" class="td-button td-button-fällig" value="Pause"></td>
+            <td><input type="button" class="td-button td-button-fällig" value=""></td>
+            <td><input type="button" class="td-button td-button-bald" value=""></td>
+            <td><input type="button" class="td-button td-button-bald" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+          </tr>
+          <tr>
+            <td>13:30</td>
+            <td><input type="button" class="td-button td-button-fällig" value=""></td>
+            <td><input type="button" class="td-button td-button-fällig" value="Lesen"></td>
+            <td><input type="button" class="td-button td-button-bald" value=""></td>
+            <td><input type="button" class="td-button td-button-bald" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+          </tr>
+          <tr>
+            <td>14:00</td>
+            <td><input type="button" class="td-button td-button-fällig" value=""></td>
+            <td><input type="button" class="td-button td-button-fällig" value=""></td>
+            <td><input type="button" class="td-button td-button-bald" value="Projekt"></td>
+            <td><input type="button" class="td-button td-button-bald" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+          </tr>
+          <tr>
+            <td>14:30</td>
+            <td><input type="button" class="td-button td-button-fällig" value=""></td>
+            <td><input type="button" class="td-button td-button-fällig" value=""></td>
+            <td><input type="button" class="td-button td-button-bald" value=""></td>
+            <td><input type="button" class="td-button td-button-bald" value="Gym"></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+          </tr>
+          <tr>
+            <td>15:00</td>
+            <td><input type="button" class="td-button td-button-fällig" value=""></td>
+            <td><input type="button" class="td-button td-button-fällig" value=""></td>
+            <td><input type="button" class="td-button td-button-bald" value=""></td>
+            <td><input type="button" class="td-button td-button-bald" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value="Kaffee"></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+          </tr>
+          <tr>
+            <td>15:30</td>
+            <td><input type="button" class="td-button td-button-fällig" value=""></td>
+            <td><input type="button" class="td-button td-button-fällig" value=""></td>
+            <td><input type="button" class="td-button td-button-bald" value=""></td>
+            <td><input type="button" class="td-button td-button-bald" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value="Kino"></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+          </tr>
+          <tr>
+            <td>16:00</td>
+            <td><input type="button" class="td-button td-button-fällig" value=""></td>
+            <td><input type="button" class="td-button td-button-fällig" value=""></td>
+            <td><input type="button" class="td-button td-button-bald" value=""></td>
+            <td><input type="button" class="td-button td-button-bald" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value=""></td>
+            <td><input type="button" class="td-button td-button-lang" value="Kochen"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
+    <div class="legend">
+      <span class="fällig">Fällig</span>
+      <span class="bald">Bald</span>
+      <span class="lang">Lang</span>
+    </div>
+  </main>
 </body>
 </html>
